@@ -28,10 +28,10 @@
                     <span class="text-blue-300 font-semibold">reliable</span>, high-performance software
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="400">
-                    <a href="/services" class="bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-8 py-4 rounded-lg font-bold hover:from-yellow-500 hover:to-orange-600 transition-all transform hover:scale-105 shadow-lg">
+                    <a href="/itech/services" class="bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-8 py-4 rounded-lg font-bold hover:from-yellow-500 hover:to-orange-600 transition-all transform hover:scale-105 shadow-lg">
                         Explore Services
                     </a>
-                    <a href="/contact" class="border-2 border-blue-300 text-blue-300 px-8 py-4 rounded-lg font-bold hover:bg-blue-300 hover:text-slate-900 transition-all transform hover:scale-105">
+                    <a href="/itech/contact" class="border-2 border-blue-300 text-blue-300 px-8 py-4 rounded-lg font-bold hover:bg-blue-300 hover:text-slate-900 transition-all transform hover:scale-105">
                         Get Started
                     </a>
                 </div>
@@ -680,8 +680,8 @@
             </div>
             
             <div class="text-center mt-12">
-                <a href="/portfolio" class="inline-flex items-center bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-                    View All Projects
+                <a href="/itech/contact" class="inline-flex items-center bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                    Contact Us for Projects
                     <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </div>
@@ -804,10 +804,10 @@
                 Join 50+ companies who trust iTechnism for their quality assurance and development needs.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="400">
-                <a href="/contact" class="bg-yellow-400 text-black px-8 py-3 rounded-lg font-bold hover:bg-yellow-500 transition-colors transform hover:scale-105">
+                <a href="/itech/contact" class="bg-yellow-400 text-black px-8 py-3 rounded-lg font-bold hover:bg-yellow-500 transition-colors transform hover:scale-105">
                     Start Your Project
                 </a>
-                <a href="/services" class="border-2 border-blue-300 text-blue-300 px-8 py-3 rounded-lg font-bold hover:bg-blue-300 hover:text-slate-900 transition-colors">
+                <a href="/itech/services" class="border-2 border-blue-300 text-blue-300 px-8 py-3 rounded-lg font-bold hover:bg-blue-300 hover:text-slate-900 transition-colors">
                     Explore Services
                 </a>
             </div>
@@ -1003,12 +1003,12 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Services</h4>
                     <ul class="space-y-2 text-gray-300">
-                        <li><a href="/services/manual-testing" class="hover:text-yellow-400 transition-colors">Manual Testing</a></li>
-                        <li><a href="/services/test-automation" class="hover:text-yellow-400 transition-colors">Test Automation</a></li>
-                        <li><a href="/services/api-testing" class="hover:text-yellow-400 transition-colors">API Testing</a></li>
-                        <li><a href="/services/rpa-development" class="hover:text-yellow-400 transition-colors">RPA Development</a></li>
-                        <li><a href="/services/web-development" class="hover:text-yellow-400 transition-colors">Web Development</a></li>
-                        <li><a href="/services/web-scraping-crawling" class="hover:text-yellow-400 transition-colors">Web Scraping</a></li>
+                        <li><a href="/itech/services/manual-testing" class="hover:text-yellow-400 transition-colors">Manual Testing</a></li>
+                        <li><a href="/itech/services/test-automation" class="hover:text-yellow-400 transition-colors">Test Automation</a></li>
+                        <li><a href="/itech/services/api-testing" class="hover:text-yellow-400 transition-colors">API Testing</a></li>
+                        <li><a href="/itech/services/uipath" class="hover:text-yellow-400 transition-colors">RPA Development</a></li>
+                        <li><a href="/itech/services/web-development" class="hover:text-yellow-400 transition-colors">Web Development</a></li>
+                        <li><a href="/itech/services/web-scraping-crawling" class="hover:text-yellow-400 transition-colors">Web Scraping</a></li>
                     </ul>
                 </div>
                 
@@ -1016,12 +1016,12 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
                     <ul class="space-y-2 text-gray-300">
-                        <li><a href="/" class="hover:text-yellow-400 transition-colors">Home</a></li>
-                        <li><a href="/services" class="hover:text-yellow-400 transition-colors">All Services</a></li>
-                        <li><a href="/about" class="hover:text-yellow-400 transition-colors">About Us</a></li>
-                        <li><a href="/contact" class="hover:text-yellow-400 transition-colors">Contact</a></li>
-                        <li><a href="/careers" class="hover:text-yellow-400 transition-colors">Careers</a></li>
-                        <li><a href="/blog" class="hover:text-yellow-400 transition-colors">Blog</a></li>
+                        <li><a href="/itech" class="hover:text-yellow-400 transition-colors">Home</a></li>
+                        <li><a href="/itech/services" class="hover:text-yellow-400 transition-colors">All Services</a></li>
+                        <li><a href="/itech/about" class="hover:text-yellow-400 transition-colors">About Us</a></li>
+                        <li><a href="/itech/contact" class="hover:text-yellow-400 transition-colors">Contact</a></li>
+                        <li><a href="/itech/contact" class="hover:text-yellow-400 transition-colors">Careers</a></li>
+                        <li><a href="/itech/blog" class="hover:text-yellow-400 transition-colors">Blog</a></li>
                     </ul>
                 </div>
                 
@@ -1045,9 +1045,9 @@
             <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
                 <p class="text-gray-400 text-sm">&copy; 2024 iTechnism. All rights reserved.</p>
                 <div class="flex space-x-6 mt-4 md:mt-0">
-                    <a href="/privacy" class="text-gray-400 hover:text-yellow-400 text-sm transition-colors">Privacy Policy</a>
-                    <a href="/terms" class="text-gray-400 hover:text-yellow-400 text-sm transition-colors">Terms of Service</a>
-                    <a href="/sitemap" class="text-gray-400 hover:text-yellow-400 text-sm transition-colors">Sitemap</a>
+                    <a href="/itech/contact" class="text-gray-400 hover:text-yellow-400 text-sm transition-colors">Privacy Policy</a>
+                    <a href="/itech/contact" class="text-gray-400 hover:text-yellow-400 text-sm transition-colors">Terms of Service</a>
+                    <a href="/itech/services" class="text-gray-400 hover:text-yellow-400 text-sm transition-colors">Sitemap</a>
                 </div>
             </div>
         </div>
