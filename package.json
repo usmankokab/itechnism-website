@@ -1,0 +1,33 @@
+{
+  "name": "itechnism-website",
+  "version": "1.0.0",
+  "description": "Professional website for iTechnism QA and Development services",
+  "main": "index.php",
+  "scripts": {
+    "dev": "php -S localhost:8000",
+    "test": "php -l index.php",
+    "build": "echo 'Build process for production'",
+    "deploy": "echo 'Deployment script'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/itechnism-website.git"
+  },
+  "keywords": [
+    "qa",
+    "testing",
+    "automation",
+    "rpa",
+    "web-development",
+    "data-extraction",
+    "digital-marketing",
+    "php",
+    "mysql"
+  ],
+  "author": "iTechnism Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/itechnism-website/issues"
+  },
+  "homepage": "https://github.com/yourusername/itechnism-website#readme"
+}
