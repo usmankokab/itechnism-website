@@ -1,7 +1,7 @@
 <?php
 class Database {
     private $host = 'localhost';
-    private $db_name = 'itech_qa';
+    private $db_name = 'itech_db';
     private $username = 'root';
     private $password = '';
     public $conn;

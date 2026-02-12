@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../config/config.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -181,7 +182,7 @@
             <p class="text-xl mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
                 Let's discuss how we can help your business achieve its technology goals
             </p>
-            <a href="/itech/contact" class="bg-yellow-400 text-black px-8 py-4 rounded-lg text-xl font-bold hover:bg-yellow-300 transition-colors inline-block" data-aos="pulse" data-aos-delay="400">
+            <a href="<?php echo url('/contact'); ?>" class="bg-yellow-400 text-black px-8 py-4 rounded-lg text-xl font-bold hover:bg-yellow-300 transition-colors inline-block" data-aos="pulse" data-aos-delay="400">
                 Get In Touch →
             </a>
         </div>

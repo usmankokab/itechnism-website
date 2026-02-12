@@ -1,34 +1,27 @@
-# Dependencies
-node_modules/
-vendor/
+# Database credentials
+config/database.php
 
 # Environment files
 .env
 .env.local
-.env.production
 
-# Database
-*.sql.backup
-*.db
-
-# Logs
-*.log
-logs/
-
-# Cache
-cache/
-tmp/
-
-# IDE
+# IDE files
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
 
-# OS
+# OS files
 .DS_Store
 Thumbs.db
 
-# Build files
-dist/
-build/
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Update script (no longer needed)
+update-urls.php

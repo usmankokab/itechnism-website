@@ -1,7 +1,7 @@
 <!-- Footer -->
 <footer class="bg-gray-900 text-white py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-6 gap-8">
             <!-- Company Info -->
             <div class="col-span-1 md:col-span-2">
                 <h3 class="text-2xl font-bold text-yellow-400 mb-4">iTechnism</h3>
@@ -26,12 +26,22 @@
             <div>
                 <h4 class="text-lg font-semibold mb-4">Services</h4>
                 <ul class="space-y-2 text-gray-300">
-                    <li><a href="/itech/services/manual-testing" class="hover:text-yellow-400 transition-colors">Manual Testing</a></li>
-                    <li><a href="/itech/services/test-automation" class="hover:text-yellow-400 transition-colors">Test Automation</a></li>
-                    <li><a href="/itech/services/api-testing" class="hover:text-yellow-400 transition-colors">API Testing</a></li>
-                    <li><a href="/itech/services/rpa-development" class="hover:text-yellow-400 transition-colors">RPA Development</a></li>
-                    <li><a href="/itech/services/web-development" class="hover:text-yellow-400 transition-colors">Web Development</a></li>
-                    <li><a href="/itech/services/web-scraping-crawling" class="hover:text-yellow-400 transition-colors">Web Scraping</a></li>
+                    <li><a href="<?php echo url('/services/manual-testing'); ?>" class="hover:text-yellow-400 transition-colors">Manual Testing</a></li>
+                    <li><a href="<?php echo url('/services/test-automation'); ?>" class="hover:text-yellow-400 transition-colors">Test Automation</a></li>
+                    <li><a href="<?php echo url('/services/api-testing'); ?>" class="hover:text-yellow-400 transition-colors">API Testing</a></li>
+                    <li><a href="<?php echo url('/services/rpa-development'); ?>" class="hover:text-yellow-400 transition-colors">RPA Development</a></li>
+                    <li><a href="<?php echo url('/services/web-development'); ?>" class="hover:text-yellow-400 transition-colors">Web Development</a></li>
+                    <li><a href="<?php echo url('/services/web-scraping-crawling'); ?>" class="hover:text-yellow-400 transition-colors">Web Scraping</a></li>
+                </ul>
+            </div>
+            
+            <!-- Workflow Automation -->
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Workflow Automation</h4>
+                <ul class="space-y-2 text-gray-300">
+                    <li><a href="<?php echo url('/services/n8n'); ?>" class="hover:text-yellow-400 transition-colors">n8n Automation</a></li>
+                    <li><a href="<?php echo url('/services/make-automation'); ?>" class="hover:text-yellow-400 transition-colors">Make Automation</a></li>
+                    <li><a href="<?php echo url('/services/zapier-automation'); ?>" class="hover:text-yellow-400 transition-colors">Zapier Automation</a></li>
                 </ul>
             </div>
             
@@ -40,11 +50,11 @@
                 <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
                 <ul class="space-y-2 text-gray-300">
                     <li><a href="/itech" class="hover:text-yellow-400 transition-colors">Home</a></li>
-                    <li><a href="/itech/services" class="hover:text-yellow-400 transition-colors">All Services</a></li>
-                    <li><a href="/itech/about" class="hover:text-yellow-400 transition-colors">About Us</a></li>
-                    <li><a href="/itech/contact" class="hover:text-yellow-400 transition-colors">Contact</a></li>
-                    <li><a href="/itech/careers" class="hover:text-yellow-400 transition-colors">Careers</a></li>
-                    <li><a href="/itech/blog" class="hover:text-yellow-400 transition-colors">Blog</a></li>
+                    <li><a href="<?php echo url('/services'); ?>" class="hover:text-yellow-400 transition-colors">All Services</a></li>
+                    <li><a href="<?php echo url('/about'); ?>" class="hover:text-yellow-400 transition-colors">About Us</a></li>
+                    <li><a href="<?php echo url('/contact'); ?>" class="hover:text-yellow-400 transition-colors">Contact</a></li>
+                    <li><a href="<?php echo url('/careers'); ?>" class="hover:text-yellow-400 transition-colors">Careers</a></li>
+                    <li><a href="<?php echo url('/blog'); ?>" class="hover:text-yellow-400 transition-colors">Blog</a></li>
                 </ul>
             </div>
             
@@ -68,9 +78,9 @@
         <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p class="text-gray-400 text-sm">&copy; 2024 iTechnism. All rights reserved.</p>
             <div class="flex space-x-6 mt-4 md:mt-0">
-                <a href="/itech/privacy" class="text-gray-400 hover:text-yellow-400 text-sm transition-colors">Privacy Policy</a>
-                <a href="/itech/terms" class="text-gray-400 hover:text-yellow-400 text-sm transition-colors">Terms of Service</a>
-                <a href="/itech/sitemap" class="text-gray-400 hover:text-yellow-400 text-sm transition-colors">Sitemap</a>
+                <a href="<?php echo url('/privacy'); ?>" class="text-gray-400 hover:text-yellow-400 text-sm transition-colors">Privacy Policy</a>
+                <a href="<?php echo url('/terms'); ?>" class="text-gray-400 hover:text-yellow-400 text-sm transition-colors">Terms of Service</a>
+                <a href="<?php echo url('/sitemap'); ?>" class="text-gray-400 hover:text-yellow-400 text-sm transition-colors">Sitemap</a>
             </div>
         </div>
     </div>

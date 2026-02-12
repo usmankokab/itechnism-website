@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../config/config.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -288,7 +289,7 @@
                 <div class="bg-white p-6 rounded-lg shadow-lg inline-block" data-aos="zoom-in">
                     <h3 class="text-xl font-bold text-gray-900 mb-2">Ready to Dominate Local Search?</h3>
                     <p class="text-gray-600 mb-4">After claiming your business, take it to the next level with our Local SEO services</p>
-                    <a href="/itech/services/local-seo" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors">
+                    <a href="<?php echo url('/services/local-seo'); ?>" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors">
                         Learn About Local SEO Services →
                     </a>
                 </div>

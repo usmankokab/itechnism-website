@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../../config/config.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -500,7 +501,7 @@
                 Stop wasting time on repetitive tasks. Get AI-powered bots that work 24/7 while you focus on growth.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="400">
-                <a href="/itech/contact" class="bg-yellow-400 text-black px-8 py-4 rounded-lg font-bold hover:bg-yellow-500 transition-colors transform hover:scale-105">
+                <a href="<?php echo url('/contact'); ?>" class="bg-yellow-400 text-black px-8 py-4 rounded-lg font-bold hover:bg-yellow-500 transition-colors transform hover:scale-105">
                     Get Bot Quote
                 </a>
                 <a href="tel:+15551234567" class="border-2 border-orange-300 text-orange-300 px-8 py-4 rounded-lg font-bold hover:bg-orange-300 hover:text-orange-900 transition-colors">

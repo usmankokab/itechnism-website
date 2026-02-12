@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../config/config.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,7 +40,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">Manual Testing</h3>
                             <p class="text-gray-600 mb-4 text-sm">Comprehensive manual testing to identify bugs and usability issues</p>
-                            <a href="/itech/services/manual-testing" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/manual-testing'); ?>" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -54,7 +55,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">Test Automation</h3>
                             <p class="text-gray-600 mb-4 text-sm">Automated testing solutions for faster and more reliable testing</p>
-                            <a href="/itech/services/test-automation" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/test-automation'); ?>" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -69,7 +70,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">API Testing</h3>
                             <p class="text-gray-600 mb-4 text-sm">Comprehensive API testing for functionality and performance</p>
-                            <a href="/itech/services/api-testing" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/api-testing'); ?>" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -84,7 +85,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">Database Testing</h3>
                             <p class="text-gray-600 mb-4 text-sm">Database integrity and performance testing services</p>
-                            <a href="/itech/services/database-testing" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/database-testing'); ?>" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -99,7 +100,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">Mobile Testing</h3>
                             <p class="text-gray-600 mb-4 text-sm">iOS and Android mobile app testing with Appium</p>
-                            <a href="/itech/services/mobile-testing" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/mobile-testing'); ?>" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -114,7 +115,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">Project Management</h3>
                             <p class="text-gray-600 mb-4 text-sm">QA project management with Jira and ClickUp</p>
-                            <a href="/itech/services/project-management" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/project-management'); ?>" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -145,7 +146,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">Web Scraping</h3>
                             <p class="text-gray-600 mb-4 text-sm">Extract data from websites efficiently and accurately</p>
-                            <a href="/itech/services/web-scraping-crawling" class="inline-flex items-center text-green-600 hover:text-green-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/web-scraping-crawling'); ?>" class="inline-flex items-center text-green-600 hover:text-green-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -160,7 +161,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">API Data Extraction</h3>
                             <p class="text-gray-600 mb-4 text-sm">Extract data through APIs for seamless integration</p>
-                            <a href="/itech/services/api-data-extraction" class="inline-flex items-center text-green-600 hover:text-green-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/api-data-extraction'); ?>" class="inline-flex items-center text-green-600 hover:text-green-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -175,7 +176,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">Big Data Extraction</h3>
                             <p class="text-gray-600 mb-4 text-sm">Large-scale data extraction and processing solutions</p>
-                            <a href="/itech/services/big-data-extraction" class="inline-flex items-center text-green-600 hover:text-green-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/big-data-extraction'); ?>" class="inline-flex items-center text-green-600 hover:text-green-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -190,7 +191,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">Industry-Specific Extraction</h3>
                             <p class="text-gray-600 mb-4 text-sm">Specialized data extraction for various industries</p>
-                            <a href="/itech/services/industry-specific-extraction" class="inline-flex items-center text-green-600 hover:text-green-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/industry-specific-data-extraction'); ?>" class="inline-flex items-center text-green-600 hover:text-green-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -205,7 +206,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">Social Data Extraction</h3>
                             <p class="text-gray-600 mb-4 text-sm">Social media and platform data extraction</p>
-                            <a href="/itech/services/social-data-extraction" class="inline-flex items-center text-green-600 hover:text-green-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/social-data-extraction'); ?>" class="inline-flex items-center text-green-600 hover:text-green-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -236,7 +237,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">Web Development</h3>
                             <p class="text-gray-600 mb-4 text-sm">Modern web applications and websites</p>
-                            <a href="/itech/services/web-development" class="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/web-development'); ?>" class="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -251,7 +252,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">Mobile Development</h3>
                             <p class="text-gray-600 mb-4 text-sm">iOS and Android mobile applications</p>
-                            <a href="/itech/services/mobile-development" class="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/mobile-development'); ?>" class="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -266,7 +267,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">Desktop Development</h3>
                             <p class="text-gray-600 mb-4 text-sm">Cross-platform desktop applications</p>
-                            <a href="/itech/services/desktop-development" class="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/desktop-development'); ?>" class="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -281,7 +282,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">Automation Bot Development</h3>
                             <p class="text-gray-600 mb-4 text-sm">Custom automation bots and scripts</p>
-                            <a href="/itech/services/automation-bot-development" class="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/automation-bot-development'); ?>" class="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -296,7 +297,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">Responsive Web Conversion</h3>
                             <p class="text-gray-600 mb-4 text-sm">Convert existing websites to responsive design</p>
-                            <a href="/itech/services/responsive-web-conversion" class="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/responsive-web-conversion'); ?>" class="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -327,7 +328,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">UiPath</h3>
                             <p class="text-gray-600 mb-4 text-sm">UiPath RPA development and implementation</p>
-                            <a href="/itech/services/uipath" class="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/uipath'); ?>" class="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -342,7 +343,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">Blue Prism</h3>
                             <p class="text-gray-600 mb-4 text-sm">Blue Prism RPA solutions and automation</p>
-                            <a href="/itech/services/blue-prism" class="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/blue-prism'); ?>" class="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -357,7 +358,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">Automation Anywhere</h3>
                             <p class="text-gray-600 mb-4 text-sm">Automation Anywhere bot development</p>
-                            <a href="/itech/services/automation-anywhere" class="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/automation-anywhere'); ?>" class="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -372,7 +373,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">Microsoft Power Automate</h3>
                             <p class="text-gray-600 mb-4 text-sm">Microsoft Power Platform automation solutions</p>
-                            <a href="/itech/services/microsoft-power-automate" class="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/microsoft-power-automate'); ?>" class="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -387,7 +388,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">Playwright RPA</h3>
                             <p class="text-gray-600 mb-4 text-sm">Modern web automation with Playwright</p>
-                            <a href="/itech/services/playwright-rpa" class="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/playwright-rpa'); ?>" class="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -402,7 +403,68 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">RPA Testing</h3>
                             <p class="text-gray-600 mb-4 text-sm">Quality assurance for RPA bots and processes</p>
-                            <a href="/itech/services/rpa-testing" class="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/rpa-testing'); ?>" class="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium text-sm">
+                                Learn More
+                                <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Workflow Automation -->
+            <div class="mb-16">
+                <div class="flex items-center mb-8">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mr-4">
+                        <i class="fas fa-cogs text-indigo-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900">Workflow Automation</h2>
+                        <p class="text-gray-600">Connect apps and automate workflows with leading automation platforms</p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group" data-aos="fade-up">
+                        <div class="p-6">
+                            <div class="w-12 h-12 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-project-diagram text-white text-lg"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-3">n8n Automation</h3>
+                            <p class="text-gray-600 mb-4 text-sm">Visual workflow automation with self-hosted control</p>
+                            <a href="<?php echo url('/services/n8n'); ?>" class="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-medium text-sm">
+                                Learn More
+                                <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
+                        <div class="p-6">
+                            <div class="w-12 h-12 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-network-wired text-white text-lg"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-3">Make Automation</h3>
+                            <p class="text-gray-600 mb-4 text-sm">Advanced automation scenarios with 1000+ app integrations</p>
+                            <a href="<?php echo url('/services/make-automation'); ?>" class="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-medium text-sm">
+                                Learn More
+                                <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group" data-aos="fade-up" data-aos-delay="200">
+                        <div class="p-6">
+                            <div class="w-12 h-12 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-bolt text-white text-lg"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-3">Zapier Automation</h3>
+                            <p class="text-gray-600 mb-4 text-sm">Simple, powerful automations connecting 5000+ apps</p>
+                            <a href="<?php echo url('/services/zapier-automation'); ?>" class="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -433,7 +495,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">SEO Services</h3>
                             <p class="text-gray-600 mb-4 text-sm">On-page and technical SEO optimization</p>
-                            <a href="/itech/services/seo-services" class="inline-flex items-center text-red-600 hover:text-red-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/seo-services'); ?>" class="inline-flex items-center text-red-600 hover:text-red-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -448,7 +510,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">Local SEO</h3>
                             <p class="text-gray-600 mb-4 text-sm">Google My Business and local search optimization</p>
-                            <a href="/itech/services/local-seo" class="inline-flex items-center text-red-600 hover:text-red-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/local-seo'); ?>" class="inline-flex items-center text-red-600 hover:text-red-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -463,7 +525,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">PPC Advertising</h3>
                             <p class="text-gray-600 mb-4 text-sm">Google Ads and paid search management</p>
-                            <a href="/itech/services/sem-ppc" class="inline-flex items-center text-red-600 hover:text-red-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/sem-ppc'); ?>" class="inline-flex items-center text-red-600 hover:text-red-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -478,7 +540,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">Social Media</h3>
                             <p class="text-gray-600 mb-4 text-sm">Social media marketing and management</p>
-                            <a href="/itech/services/social-media-marketing" class="inline-flex items-center text-red-600 hover:text-red-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/social-media-marketing'); ?>" class="inline-flex items-center text-red-600 hover:text-red-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -493,7 +555,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">Content Marketing</h3>
                             <p class="text-gray-600 mb-4 text-sm">Strategic content creation and marketing</p>
-                            <a href="/itech/services/content-marketing" class="inline-flex items-center text-red-600 hover:text-red-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/content-marketing'); ?>" class="inline-flex items-center text-red-600 hover:text-red-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -508,7 +570,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">Email Marketing</h3>
                             <p class="text-gray-600 mb-4 text-sm">Automated email campaigns and nurturing</p>
-                            <a href="/itech/services/email-marketing-automation" class="inline-flex items-center text-red-600 hover:text-red-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/email-marketing-automation'); ?>" class="inline-flex items-center text-red-600 hover:text-red-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -523,7 +585,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">Conversion Rate Optimization</h3>
                             <p class="text-gray-600 mb-4 text-sm">Optimize websites for better conversions</p>
-                            <a href="/itech/services/conversion-rate-optimization" class="inline-flex items-center text-red-600 hover:text-red-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/conversion-rate-optimization'); ?>" class="inline-flex items-center text-red-600 hover:text-red-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -538,7 +600,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">Analytics & Reporting</h3>
                             <p class="text-gray-600 mb-4 text-sm">Data-driven insights and performance tracking</p>
-                            <a href="/itech/services/analytics-reporting" class="inline-flex items-center text-red-600 hover:text-red-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/analytics-reporting'); ?>" class="inline-flex items-center text-red-600 hover:text-red-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -553,7 +615,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">Guest Posting</h3>
                             <p class="text-gray-600 mb-4 text-sm">High-quality backlinks through guest posting</p>
-                            <a href="/itech/services/guest-posting" class="inline-flex items-center text-red-600 hover:text-red-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/guest-posting'); ?>" class="inline-flex items-center text-red-600 hover:text-red-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -568,7 +630,7 @@
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-3">Claim Your Business</h3>
                             <p class="text-gray-600 mb-4 text-sm">Business listing optimization and management</p>
-                            <a href="/itech/services/claim-your-business" class="inline-flex items-center text-red-600 hover:text-red-700 font-medium text-sm">
+                            <a href="<?php echo url('/services/claim-your-business'); ?>" class="inline-flex items-center text-red-600 hover:text-red-700 font-medium text-sm">
                                 Learn More
                                 <svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -584,7 +646,7 @@
                 <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-12 rounded-2xl">
                     <h2 class="text-3xl font-bold mb-4">Ready to Get Started?</h2>
                     <p class="text-xl mb-8 max-w-2xl mx-auto">Contact us today to discuss your project requirements and get a free consultation</p>
-                    <a href="/itech/contact" class="bg-yellow-400 text-black px-8 py-4 rounded-lg text-xl font-bold hover:bg-yellow-300 transition-colors inline-block">
+                    <a href="<?php echo url('/contact'); ?>" class="bg-yellow-400 text-black px-8 py-4 rounded-lg text-xl font-bold hover:bg-yellow-300 transition-colors inline-block">
                         Get Free Consultation →
                     </a>
                 </div>

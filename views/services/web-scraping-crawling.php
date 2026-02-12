@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../../config/config.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -425,7 +426,7 @@
                 Stop wasting time on manual data collection. Get the data you need to dominate your market.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="400">
-                <a href="/itech/contact" class="bg-yellow-400 text-black px-8 py-4 rounded-lg font-bold hover:bg-yellow-500 transition-colors transform hover:scale-105">
+                <a href="<?php echo url('/contact'); ?>" class="bg-yellow-400 text-black px-8 py-4 rounded-lg font-bold hover:bg-yellow-500 transition-colors transform hover:scale-105">
                     Get Free Data Sample
                 </a>
                 <a href="tel:+15551234567" class="border-2 border-emerald-300 text-emerald-300 px-8 py-4 rounded-lg font-bold hover:bg-emerald-300 hover:text-emerald-900 transition-colors">

@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../config/config.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,41 +36,36 @@
                 <!-- Contact Form -->
                 <div data-aos="fade-right">
                     <h2 class="text-3xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
-                    <form class="space-y-6">
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div>
-                                <label class="block text-sm font-bold text-gray-700 mb-2">First Name *</label>
-                                <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-bold text-gray-700 mb-2">Last Name *</label>
-                                <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
-                            </div>
+                    <form class="space-y-6" action="<?php echo url('/contact/submit'); ?>" method="POST">
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Full Name *</label>
+                            <input type="text" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
                         </div>
                         
                         <div>
                             <label class="block text-sm font-bold text-gray-700 mb-2">Email Address *</label>
-                            <input type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
+                            <input type="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
                         </div>
                         
                         <div>
                             <label class="block text-sm font-bold text-gray-700 mb-2">Phone Number</label>
-                            <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
+                            <input type="tel" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
                         </div>
                         
                         <div>
                             <label class="block text-sm font-bold text-gray-700 mb-2">Company Name</label>
-                            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
+                            <input type="text" name="company" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
                         </div>
                         
                         <div>
                             <label class="block text-sm font-bold text-gray-700 mb-2">Service Interested In *</label>
-                            <select required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
+                            <select name="service" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
                                 <option value="">Select a service</option>
                                 <option value="software-qa">Software Quality Assurance</option>
                                 <option value="data-extraction">Data Extraction</option>
                                 <option value="development">Software Development</option>
                                 <option value="rpa">RPA Services</option>
+                                <option value="workflow-automation">Workflow Automation</option>
                                 <option value="digital-marketing">Digital Marketing</option>
                                 <option value="consulting">Technology Consulting</option>
                                 <option value="multiple">Multiple Services</option>
@@ -78,7 +74,7 @@
                         
                         <div>
                             <label class="block text-sm font-bold text-gray-700 mb-2">Project Budget</label>
-                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
+                            <select name="budget" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
                                 <option value="">Select budget range</option>
                                 <option value="under-5k">Under $5,000</option>
                                 <option value="5k-15k">$5,000 - $15,000</option>
@@ -90,7 +86,7 @@
                         
                         <div>
                             <label class="block text-sm font-bold text-gray-700 mb-2">Project Details *</label>
-                            <textarea rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Please describe your project requirements, timeline, and any specific needs..."></textarea>
+                            <textarea name="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Please describe your project requirements, timeline, and any specific needs..."></textarea>
                         </div>
                         
                         <button type="submit" class="w-full bg-green-600 text-white py-4 px-8 rounded-lg text-xl font-bold hover:bg-green-700 transition-colors">
@@ -114,8 +110,8 @@
                             </div>
                             <div>
                                 <h3 class="text-lg font-bold text-gray-900 mb-1">Email Us</h3>
-                                <p class="text-gray-600">info@itechnism.com</p>
-                                <p class="text-gray-600">support@itechnism.com</p>
+                                <p class="text-gray-600">usman.kokab@gmail.com</p>
+                                <p class="text-gray-600">tahaa_usman@gmail.com</p>
                             </div>
                         </div>
                         
@@ -125,8 +121,8 @@
                             </div>
                             <div>
                                 <h3 class="text-lg font-bold text-gray-900 mb-1">Call Us</h3>
-                                <p class="text-gray-600">+1 (555) 123-4567</p>
-                                <p class="text-gray-600">+1 (555) 987-6543</p>
+                                <p class="text-gray-600">+92 (334) 438-4943</p>
+                                <p class="text-gray-600">+92 (316) 495-7599</p>
                             </div>
                         </div>
                         
@@ -136,7 +132,7 @@
                             </div>
                             <div>
                                 <h3 class="text-lg font-bold text-gray-900 mb-1">Visit Us</h3>
-                                <p class="text-gray-600">123 Technology Drive<br>Suite 456<br>Tech City, TC 12345</p>
+                                <p class="text-gray-600">Sufiabad, Attari Saroba<br>Foroozpur Road<br>Lahore, 54600</p>
                             </div>
                         </div>
                         
@@ -219,10 +215,10 @@
                 Don't wait - contact us today and let's discuss how we can help transform your business
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="400">
-                <a href="tel:+15551234567" class="bg-yellow-400 text-black px-8 py-4 rounded-lg text-xl font-bold hover:bg-yellow-300 transition-colors">
-                    📞 Call Now: (555) 123-4567
+                <a href="tel:+923344384943" class="bg-yellow-400 text-black px-8 py-4 rounded-lg text-xl font-bold hover:bg-yellow-300 transition-colors">
+                    📞 Call Now: (334) 438-4943
                 </a>
-                <a href="mailto:info@itechnism.com" class="border-2 border-white text-white hover:bg-white hover:text-green-600 px-8 py-4 rounded-lg text-xl font-bold transition-colors">
+                <a href="mailto:usman.kokab@gmail.com" class="border-2 border-white text-white hover:bg-white hover:text-green-600 px-8 py-4 rounded-lg text-xl font-bold transition-colors">
                     ✉️ Email Us
                 </a>
             </div>
@@ -237,6 +233,14 @@
             duration: 800,
             once: true
         });
+        
+        // Simple form submission feedback
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('success') === '1') {
+            alert('✅ Message sent successfully! We\'ll respond within 2 hours.');
+        } else if (urlParams.get('error')) {
+            alert('❌ Error: ' + urlParams.get('error'));
+        }
     </script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../config/config.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -419,12 +420,13 @@
             <p class="text-xl text-blue-100 mb-8">Get weekly updates on QA trends, automation tips, and industry best practices</p>
             
             <div class="bg-white rounded-xl p-6 max-w-md mx-auto">
-                <form class="space-y-4">
+                <form class="space-y-4" onsubmit="subscribeNewsletter(event, 'blog')">
                     <div>
-                        <input type="email" placeholder="Enter your email address" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900">
+                        <input type="email" name="email" placeholder="Enter your email address" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900">
                     </div>
                     <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-                        Subscribe to Newsletter
+                        <span class="btn-text">Subscribe to Newsletter</span>
+                        <span class="btn-loading hidden">Subscribing...</span>
                     </button>
                 </form>
                 <p class="text-gray-500 text-sm mt-3">Join 5,000+ professionals. Unsubscribe anytime.</p>
@@ -586,7 +588,7 @@
                             <div class="bg-blue-50 p-6 rounded-lg">
                                 <h3 class="text-xl font-bold text-blue-900 mb-3">Need Expert Help?</h3>
                                 <p class="text-blue-700 mb-4">Our team of certified professionals can help you implement these strategies in your organization.</p>
-                                <a href="/itech/contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-block">Contact Us Today</a>
+                                <a href="<?php echo url('/contact'); ?>" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-block">Contact Us Today</a>
                             </div>
                         </div>
                     </div>
@@ -616,6 +618,73 @@
                 }
             });
         });
+        
+        // Newsletter subscription
+        function subscribeNewsletter(event, source) {
+            event.preventDefault();
+            
+            const form = event.target;
+            const formData = new FormData(form);
+            formData.append('source', source);
+            
+            const button = form.querySelector('button[type="submit"]');
+            const btnText = button.querySelector('.btn-text');
+            const btnLoading = button.querySelector('.btn-loading');
+            
+            // Show loading state
+            btnText.classList.add('hidden');
+            btnLoading.classList.remove('hidden');
+            button.disabled = true;
+            
+            fetch('/itech/api/newsletter.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                console.log('Response status:', response.status);
+                return response.text();
+            })
+            .then(text => {
+                console.log('Raw response:', text);
+                try {
+                    const data = JSON.parse(text);
+                    console.log('Parsed data:', data);
+                    if (data.success) {
+                        showMessage(data.message, 'success');
+                        form.reset();
+                    } else {
+                        showMessage(data.message, 'error');
+                    }
+                } catch (e) {
+                    console.error('JSON parse error:', e);
+                    showMessage('Server response error: ' + text, 'error');
+                }
+            })
+            .catch(error => {
+                console.error('Fetch error:', error);
+                showMessage('Network error: ' + error.message, 'error');
+            })
+            .finally(() => {
+                // Reset button state
+                btnText.classList.remove('hidden');
+                btnLoading.classList.add('hidden');
+                button.disabled = false;
+            });
+        }
+        
+        function showMessage(message, type) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `fixed top-4 right-4 z-50 p-4 rounded-lg shadow-lg ${
+                type === 'success' ? 'bg-green-500 text-white' : 'bg-red-500 text-white'
+            }`;
+            messageDiv.textContent = message;
+            
+            document.body.appendChild(messageDiv);
+            
+            setTimeout(() => {
+                messageDiv.remove();
+            }, 5000);
+        }
     </script>
 </body>
 </html>

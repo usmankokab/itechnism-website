@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../../config/config.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -398,11 +399,11 @@
                 Don't wait for production failures. Get comprehensive API testing that ensures reliability, performance, and security.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="400">
-                <a href="/itech/contact" class="bg-yellow-400 text-black px-8 py-4 rounded-lg font-bold hover:bg-yellow-500 transition-colors transform hover:scale-105">
+                <a href="<?php echo url('/contact'); ?>" class="bg-yellow-400 text-black px-8 py-4 rounded-lg font-bold hover:bg-yellow-500 transition-colors transform hover:scale-105">
                     Start API Testing
                 </a>
-                <a href="tel:+15551234567" class="border-2 border-teal-300 text-teal-300 px-8 py-4 rounded-lg font-bold hover:bg-teal-300 hover:text-teal-900 transition-colors">
-                    Call: (555) 123-4567
+                <a href="tel:+923344384943" class="border-2 border-teal-300 text-teal-300 px-8 py-4 rounded-lg font-bold hover:bg-teal-300 hover:text-teal-900 transition-colors">
+                    Call: (334) 438-4943
                 </a>
             </div>
             

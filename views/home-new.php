@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../config/config.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,10 +29,10 @@
                     <span class="text-blue-300 font-semibold">reliable</span>, high-performance software
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="400">
-                    <a href="/itech/services" class="bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-8 py-4 rounded-lg font-bold hover:from-yellow-500 hover:to-orange-600 transition-all transform hover:scale-105 shadow-lg">
+                    <a href="<?php echo url('/services'); ?>" class="bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-8 py-4 rounded-lg font-bold hover:from-yellow-500 hover:to-orange-600 transition-all transform hover:scale-105 shadow-lg">
                         Explore Services
                     </a>
-                    <a href="/itech/contact" class="border-2 border-blue-300 text-blue-300 px-8 py-4 rounded-lg font-bold hover:bg-blue-300 hover:text-slate-900 transition-all transform hover:scale-105">
+                    <a href="<?php echo url('/contact'); ?>" class="border-2 border-blue-300 text-blue-300 px-8 py-4 rounded-lg font-bold hover:bg-blue-300 hover:text-slate-900 transition-all transform hover:scale-105">
                         Get Started
                     </a>
                 </div>
@@ -104,6 +105,22 @@
                             </div>
                         </div>
                         
+                        <!-- Workflow Automation Slide -->
+                        <div class="swiper-slide">
+                            <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 text-center border border-white border-opacity-20">
+                                <div class="w-20 h-20 bg-gradient-to-r from-teal-400 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                                    <i class="fas fa-cogs text-white text-3xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-white mb-4">Workflow Automation</h3>
+                                <p class="text-gray-200 mb-6">No-code automation platforms for streamlined business processes</p>
+                                <div class="flex flex-wrap justify-center gap-2">
+                                    <span class="bg-teal-500 bg-opacity-30 text-teal-200 px-3 py-1 rounded-full text-sm">n8n</span>
+                                    <span class="bg-teal-500 bg-opacity-30 text-teal-200 px-3 py-1 rounded-full text-sm">Make</span>
+                                    <span class="bg-teal-500 bg-opacity-30 text-teal-200 px-3 py-1 rounded-full text-sm">Zapier</span>
+                                </div>
+                            </div>
+                        </div>
+                        
                         <!-- Digital Marketing Slide -->
                         <div class="swiper-slide">
                             <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 text-center border border-white border-opacity-20">
@@ -138,7 +155,7 @@
                 <p class="text-lg text-gray-600">Comprehensive services across all technology domains</p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
                 <div class="text-center p-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                         <i class="fas fa-shield-alt text-blue-600 text-2xl"></i>
@@ -172,6 +189,14 @@
                 </div>
                 
                 <div class="text-center p-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-cogs text-teal-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Workflow Automation</h3>
+                    <p class="text-gray-600 text-sm">No-code automation platforms</p>
+                </div>
+                
+                <div class="text-center p-6" data-aos="fade-up" data-aos-delay="600">
                     <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
                         <i class="fas fa-bullhorn text-pink-600 text-2xl"></i>
                     </div>
@@ -680,7 +705,7 @@
             </div>
             
             <div class="text-center mt-12">
-                <a href="/itech/contact" class="inline-flex items-center bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                <a href="<?php echo url('/contact'); ?>" class="inline-flex items-center bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
                     Contact Us for Projects
                     <i class="fas fa-arrow-right ml-2"></i>
                 </a>
@@ -804,10 +829,10 @@
                 Join 50+ companies who trust iTechnism for their quality assurance and development needs.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="400">
-                <a href="/itech/contact" class="bg-yellow-400 text-black px-8 py-3 rounded-lg font-bold hover:bg-yellow-500 transition-colors transform hover:scale-105">
+                <a href="<?php echo url('/contact'); ?>" class="bg-yellow-400 text-black px-8 py-3 rounded-lg font-bold hover:bg-yellow-500 transition-colors transform hover:scale-105">
                     Start Your Project
                 </a>
-                <a href="/itech/services" class="border-2 border-blue-300 text-blue-300 px-8 py-3 rounded-lg font-bold hover:bg-blue-300 hover:text-slate-900 transition-colors">
+                <a href="<?php echo url('/services'); ?>" class="border-2 border-blue-300 text-blue-300 px-8 py-3 rounded-lg font-bold hover:bg-blue-300 hover:text-slate-900 transition-colors">
                     Explore Services
                 </a>
             </div>
@@ -931,39 +956,40 @@
                         <div class="space-y-3">
                             <div class="flex items-center">
                                 <i class="fas fa-phone text-yellow-400 mr-3"></i>
-                                <span>+1 (555) 123-4567</span>
+                                <span>+92 (334) 438-4943</span>
                             </div>
                             <div class="flex items-center">
                                 <i class="fas fa-envelope text-yellow-400 mr-3"></i>
-                                <span>info@itechqa.com</span>
+                                <span>usman.kokab@gmail.com</span>
                             </div>
                             <div class="flex items-center">
                                 <i class="fas fa-map-marker-alt text-yellow-400 mr-3"></i>
-                                <span>123 Tech Street, Innovation City</span>
+                                <span>Sufiabad, Attari Saroba, Foroozpur Road, Lahore</span>
                             </div>
                         </div>
                     </div>
                     
                     <div class="bg-white rounded-xl p-6" data-aos="fade-left">
-                        <form class="space-y-4">
+                        <form class="space-y-4" action="<?php echo url('/home/contact'); ?>" method="POST">
                             <div>
-                                <input type="text" placeholder="Your Name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                             </div>
                             <div>
-                                <input type="email" placeholder="Your Email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                             </div>
                             <div>
-                                <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                                    <option>Select Service</option>
-                                    <option>Software QA Testing</option>
-                                    <option>Data Extraction</option>
-                                    <option>Software Development</option>
-                                    <option>RPA Services</option>
-                                    <option>Digital Marketing</option>
+                                <select name="service" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                    <option value="">Select Service</option>
+                                    <option value="Software QA Testing">Software QA Testing</option>
+                                    <option value="Data Extraction">Data Extraction</option>
+                                    <option value="Software Development">Software Development</option>
+                                    <option value="RPA Services">RPA Services</option>
+                                    <option value="Workflow Automation">Workflow Automation</option>
+                                    <option value="Digital Marketing">Digital Marketing</option>
                                 </select>
                             </div>
                             <div>
-                                <textarea placeholder="Project Details" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+                                <textarea name="message" placeholder="Project Details" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
                             </div>
                             <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
                                 Send Message
@@ -1003,12 +1029,12 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Services</h4>
                     <ul class="space-y-2 text-gray-300">
-                        <li><a href="/itech/services/manual-testing" class="hover:text-yellow-400 transition-colors">Manual Testing</a></li>
-                        <li><a href="/itech/services/test-automation" class="hover:text-yellow-400 transition-colors">Test Automation</a></li>
-                        <li><a href="/itech/services/api-testing" class="hover:text-yellow-400 transition-colors">API Testing</a></li>
-                        <li><a href="/itech/services/uipath" class="hover:text-yellow-400 transition-colors">RPA Development</a></li>
-                        <li><a href="/itech/services/web-development" class="hover:text-yellow-400 transition-colors">Web Development</a></li>
-                        <li><a href="/itech/services/web-scraping-crawling" class="hover:text-yellow-400 transition-colors">Web Scraping</a></li>
+                        <li><a href="<?php echo url('/services/manual-testing'); ?>" class="hover:text-yellow-400 transition-colors">Manual Testing</a></li>
+                        <li><a href="<?php echo url('/services/test-automation'); ?>" class="hover:text-yellow-400 transition-colors">Test Automation</a></li>
+                        <li><a href="<?php echo url('/services/api-testing'); ?>" class="hover:text-yellow-400 transition-colors">API Testing</a></li>
+                        <li><a href="<?php echo url('/services/uipath'); ?>" class="hover:text-yellow-400 transition-colors">RPA Development</a></li>
+                        <li><a href="<?php echo url('/services/web-development'); ?>" class="hover:text-yellow-400 transition-colors">Web Development</a></li>
+                        <li><a href="<?php echo url('/services/web-scraping-crawling'); ?>" class="hover:text-yellow-400 transition-colors">Web Scraping</a></li>
                     </ul>
                 </div>
                 
@@ -1017,11 +1043,11 @@
                     <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
                     <ul class="space-y-2 text-gray-300">
                         <li><a href="/itech" class="hover:text-yellow-400 transition-colors">Home</a></li>
-                        <li><a href="/itech/services" class="hover:text-yellow-400 transition-colors">All Services</a></li>
-                        <li><a href="/itech/about" class="hover:text-yellow-400 transition-colors">About Us</a></li>
-                        <li><a href="/itech/contact" class="hover:text-yellow-400 transition-colors">Contact</a></li>
-                        <li><a href="/itech/contact" class="hover:text-yellow-400 transition-colors">Careers</a></li>
-                        <li><a href="/itech/blog" class="hover:text-yellow-400 transition-colors">Blog</a></li>
+                        <li><a href="<?php echo url('/services'); ?>" class="hover:text-yellow-400 transition-colors">All Services</a></li>
+                        <li><a href="<?php echo url('/about'); ?>" class="hover:text-yellow-400 transition-colors">About Us</a></li>
+                        <li><a href="<?php echo url('/contact'); ?>" class="hover:text-yellow-400 transition-colors">Contact</a></li>
+                        <li><a href="<?php echo url('/contact'); ?>" class="hover:text-yellow-400 transition-colors">Careers</a></li>
+                        <li><a href="<?php echo url('/blog'); ?>" class="hover:text-yellow-400 transition-colors">Blog</a></li>
                     </ul>
                 </div>
                 
@@ -1029,12 +1055,14 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Stay Updated</h4>
                     <p class="text-gray-300 mb-4 text-sm">Subscribe to our newsletter for the latest QA insights and updates.</p>
-                    <form class="space-y-3">
+                    <form class="space-y-3" onsubmit="subscribeNewsletter(event, 'footer')">
                         <div>
-                            <input type="email" placeholder="Your email address" class="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-yellow-400 focus:border-transparent">
+                            <input type="email" name="email" placeholder="Your email address" class="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-yellow-400 focus:border-transparent" required>
+                            <input type="text" name="website" style="display:none">
                         </div>
                         <button type="submit" class="w-full bg-yellow-400 text-black py-2 rounded-lg font-semibold hover:bg-yellow-500 transition-colors">
-                            Subscribe
+                            <span class="btn-text">Subscribe</span>
+                            <span class="btn-loading hidden">Subscribing...</span>
                         </button>
                     </form>
                     <p class="text-gray-400 text-xs mt-2">We respect your privacy. Unsubscribe anytime.</p>
@@ -1045,9 +1073,9 @@
             <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
                 <p class="text-gray-400 text-sm">&copy; 2024 iTechnism. All rights reserved.</p>
                 <div class="flex space-x-6 mt-4 md:mt-0">
-                    <a href="/itech/contact" class="text-gray-400 hover:text-yellow-400 text-sm transition-colors">Privacy Policy</a>
-                    <a href="/itech/contact" class="text-gray-400 hover:text-yellow-400 text-sm transition-colors">Terms of Service</a>
-                    <a href="/itech/services" class="text-gray-400 hover:text-yellow-400 text-sm transition-colors">Sitemap</a>
+                    <a href="<?php echo url('/contact'); ?>" class="text-gray-400 hover:text-yellow-400 text-sm transition-colors">Privacy Policy</a>
+                    <a href="<?php echo url('/contact'); ?>" class="text-gray-400 hover:text-yellow-400 text-sm transition-colors">Terms of Service</a>
+                    <a href="<?php echo url('/services'); ?>" class="text-gray-400 hover:text-yellow-400 text-sm transition-colors">Sitemap</a>
                 </div>
             </div>
         </div>
@@ -1120,6 +1148,85 @@
                 faq.classList.add('hidden');
                 icon.classList.remove('rotate-180');
             }
+        }
+        
+        // Newsletter subscription
+        function subscribeNewsletter(event, source) {
+            event.preventDefault();
+            
+            const form = event.target;
+            const formData = new FormData(form);
+            formData.append('source', source);
+            
+            const button = form.querySelector('button[type="submit"]');
+            const btnText = button.querySelector('.btn-text');
+            const btnLoading = button.querySelector('.btn-loading');
+            
+            // Show loading state
+            if (btnText && btnLoading) {
+                btnText.classList.add('hidden');
+                btnLoading.classList.remove('hidden');
+            }
+            button.disabled = true;
+            
+            fetch('/itech/api/newsletter.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                console.log('Response status:', response.status);
+                return response.text();
+            })
+            .then(text => {
+                console.log('Raw response:', text);
+                try {
+                    const data = JSON.parse(text);
+                    console.log('Parsed data:', data);
+                    if (data.success) {
+                        showMessage(data.message, 'success');
+                        form.reset();
+                    } else {
+                        showMessage(data.message, 'error');
+                    }
+                } catch (e) {
+                    console.error('JSON parse error:', e);
+                    showMessage('Server response error: ' + text, 'error');
+                }
+            })
+            .catch(error => {
+                console.error('Fetch error:', error);
+                showMessage('Network error: ' + error.message, 'error');
+            })
+            .finally(() => {
+                // Reset button state
+                if (btnText && btnLoading) {
+                    btnText.classList.remove('hidden');
+                    btnLoading.classList.add('hidden');
+                }
+                button.disabled = false;
+            });
+        }
+        
+        function showMessage(message, type) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `fixed top-4 right-4 z-50 p-4 rounded-lg shadow-lg ${
+                type === 'success' ? 'bg-green-500 text-white' : 'bg-red-500 text-white'
+            }`;
+            messageDiv.textContent = message;
+            
+            document.body.appendChild(messageDiv);
+            
+            setTimeout(() => {
+                messageDiv.remove();
+            }, 5000);
+        }
+        
+        // Handle contact form messages
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('success') === '1') {
+            showMessage('✅ Message sent successfully! We\'ll respond within 2 hours.', 'success');
+        } else if (urlParams.get('error')) {
+            showMessage('❌ Error: ' + urlParams.get('error'), 'error');
         }
     </script>
 </body>
